@@ -1,5 +1,4 @@
 -- Kata: Beginner Series #1 School Paperwork
-
 -- Difficulty: 8 kyu
 -- Concepts: Conditional logic
 -- Platform: Codewars
