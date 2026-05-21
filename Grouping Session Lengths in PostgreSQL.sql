@@ -14,5 +14,5 @@ select
 concat(bucket_start, '-', bucket_end) as bucket,
 count(session_id) as "count"
 from cte
-group by bucket
-order by bucket asc
+group by bucket_start, bucket_end
+order by bucket_start asc
