@@ -1,3 +1,8 @@
+-- Kata: Uncovering ABC Kata Solutions' Most Extravagant Departmental Expenses
+-- Difficulty: 7 kyu
+-- Concepts: Substring & Pattern Matching, Date Part Extraction, Grouping & Aggregation, String & Currency Formatting
+-- Platform: Codewars
+
 select 
 d.department_name,
 trim(to_char(sum (e.amount), 'FM$999,999,999.00')) as total_questionable_expenses
@@ -30,4 +35,5 @@ and extract(day from date) = 1)
 or (extract(month from date) = 5
 and extract(day from date) = 21)
 group by d.department_name
-order by sum(e.amount) desc, d.department_name desc;
+order by sum(e.amount) desc, d.department_name desc
+limit 5;
